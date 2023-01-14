@@ -1,17 +1,663 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/bootstrap.min.js">
+    <link rel="stylesheet" href="js/bootstrap.bundle.js">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"><link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet"><link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"><link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<!--Bootstrap js Files Links End-->
+<link rel="icon" href="logo/HSBG_Tournaments.png" type="image/x-icon">
+    <title>HSBG | Tournaments</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>check_box_radio_box</title>
-  </head>
-  <body>
-  <center>
+    <style>
+/*         
+.roee , .checkButton{
+background-color: aqua;
+color: #000;
+}
+.checkButton{
+background-color: rgb(255, 0, 0);
+color: #000;
+}
+
+.box-1{
+   z-index: 5px;
+   position: relative;
+   right: 232px;
+}
+.box-2{
+   z-index: 5px;
+   position: relative;
+   right: 5px;
+} */
+
+
+.box-1{
+   z-index: 5px;
+   /* position: relative;
+   right: 190px; */
+}
+
+ .login-wrap {
+    border: 1px solid;
+    position: relative;
+    background: #000232;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    -webkit-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24); }
+    .login-wrap h3 {
+      font-weight: 400;
+      font-size: 18px;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .login-wrap p {
+      color: rgba(255, 255, 255, 0.5); }
+    .login-wrap .img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto;
+      margin-bottom: 20px; }
+  
+
+
+  
+  .img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+/* 
+hr{
+   border-bottom: 1px solid #fff;  
+   min-width: auto; 
+   z-index: 5px;
+  background-color: #fff;
+  width: 324px;
+  position: relative;
+  right: 30px; 
+  z-index: 5px;
+background-color: #fff;
+width: 300px;                                             
+  
+ }   */
+
+
+hr{
+   background-color: #fff;
+   position: relative;
+   right: 12px;
+}
+
+
+ .input-box-left {
+    z-index: 5px;
+    position: relative;
+    left: 88px;
+ }  
+ .input-box-left_1{
+    z-index: 5px;          
+    position: relative;
+    left: 20px;
+    font-size: 13px;
+ }  
+ .input-box-left-1{
+    z-index: 5px;
+    position: relative;
+    left: 180px;
+ }
+  .input-box-left_3{
+    z-index: 5px;
+    position: relative;
+    left: 190px;
+ }
+  .input-box-left-2{
+    z-index: 5px;
+    position: relative;
+    left: 195px;
+ }      
+ .box-1{
+    position: relative;
+    right: 23px;
+ }
+
+
+ .input-box-1{
+    position: relative;
+    left: 170px;
+    border-radius: 5%;
+    border: 1px solid #fff;
+width: 40px;
+    padding: 5px 19px;
+    padding-top: 20px;
+    
+ }
+
+ .input-box_2{
+    position: relative;
+    left: 170px;
+    border-radius: 5%;
+    border: 1px solid #fff;
+width: 40px;
+    padding: 5px 50px;
+    padding-top: 20px;
+    
+ }
+
+
+
+ .border-lain{
+    z-index: 5px;
+    border: 1px solid #bcbcbc;
+border-radius: 5%;
+padding: 5px 19px;
+position: relative;
+left: 50px;
+
+ }
+ .border-lain-1{
+    z-index: 5px;
+    border: 1px solid #bcbcbc;
+border-radius: 5%;
+padding: 5px 50px;
+position: relative;
+left: 45px;
+
+ }
+ .input-box-text{
+    z-index: 5px;
+    position: absolute;
+    left: 25px;
+    bottom: 1px;
+ }
+ .hr{
+    width: 123%; position: relative; right: 20px;
+ }
+ .box-2{
+    position: relative;
+    right: 20px;
+ }
+
+ #btn-color{
+    z-index: 5px;
+    background-color: #00ef73;
+    
+    border: 0px;}
+</style>
+</head>
+
+
+
+<body style="background:#000232;
+ color: #fff;">
+
+    <!--SIDEBAR STARTING-->
+<button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button> 
+<header id="header">
+<div class="d-flex flex-column">
+<nav class="nav-menu">
+<ul>
+<li class="active"><a href="index.html"><i class="bx bx-home"></i><span>Home</span></a></li>
+<li><a href="information.html"><i><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+</svg></i><span>Information</span></a></li>
+<li><a href="about.html"><i class="bx bx-user"></i> <span>About</span></a></li>
+<li><a href="tournaments.html"><i class="bx bx-server"></i><span>Tournaments</span></a></li>
+<li><a href="Profile.html"><i><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/></svg></i>
+<span>Profile</span></a></li>
+
+
+
+
+<li><a href="help.html"><i><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/></svg></i>
+<span>Help</span></a></li>
+</ul></nav></div></header>
+  <!--SIDEBAR END-->
+
+<!--STARTING LOGO section-->
+<main id="main">
+    <section class="ftco-section">
+        <div class="container">
+        <div class="row justify-content-center mt-5">
+        <div class="col-md-6 col-lg-4">
+        <div class="login-wrap">
+             <div class="img d-flex align-items-center justify-content-center" style="background-image: url(logo/HSBG_Tournaments.png);"></div>
+               <h3 class="text-center"></h3>
+               <div class="row">
+                <div class="col">Name</div>
+                
+                <div class="col ml-5">
+                    <select name="Players">
+	<option>a</option>
+</select>
+                </div>
+                <div class="w-100"><br></div>
+                <hr></div>
+              
+<div class="form-check"><samp class="box-1">Round</samp>
+  <samp class="border-lain"></samp>
+    <input class="form-check-input input-box-left-1" class="input-box-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label input-box-left" for="flexRadioDefault1">
+   1
+  </label>
+ 
+  
+</div>
+<div class="col mt-3 input-box-1">
+<input class="form-check-input mb-1 input-box-text" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+<label class="form-check-label input-box-text" for="flexRadioDefault1">
+  2
+</label>       
+  </div>
+<div class="col mt-3 input-box-1">
+<input class="form-check-input mb-1 input-box-text" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+<label class="form-check-label input-box-text" for="flexRadioDefault1">
+  3
+</label>       
+  </div>   
+<div class="col mt-3 input-box-1">
+<input class="form-check-input mb-1 input-box-text" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+<label class="form-check-label input-box-text" for="flexRadioDefault1">
+  4
+</label>       
+  </div>
+<div class="col mt-3 input-box-1">
+<input class="form-check-input mb-1 input-box-text" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+<label class="form-check-label input-box-text" for="flexRadioDefault1">
+  5
+</label>       
+  </div>        
+<div class="col mt-3 input-box-1">
+<input class="form-check-input mb-1 input-box-text" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+<label class="form-check-label input-box-text" for="flexRadioDefault1">
+  6
+</label>       
+
+</div> <div class="hr"><hr></div>       
+ 
+    <!-- Game -->
+              
+<div class="form-check" class="radio"><samp class="box-1">Game. <b></b></samp>
+  <samp class="border-lain"></samp>
+    <input class="form-check-input input-box-left-1" class="input-box-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label input-box-left" for="flexRadioDefault1">
+   1
+  </label>
+ 
+  
+</div>
+<div class="col mt-3 input-box-1">
+<input class="form-check-input mb-1 input-box-text" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+<label class="form-check-label input-box-text" for="flexRadioDefault1">
+  2
+</label>       
+  </div>
+<div class="col mt-3 input-box-1">
+<input class="form-check-input mb-1 input-box-text" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+<label class="form-check-label input-box-text" for="flexRadioDefault1">
+  3
+</label>       
+  </div>   
+<div class="col mt-3 input-box-1">
+<input class="form-check-input mb-1 input-box-text" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+<label class="form-check-label input-box-text" for="flexRadioDefault1">
+  4
+</label>       
+  </div>
+<div class="hr"><hr>
+
+
+
+    <!-- Finish -->
+              
+<div class="form-check ml-2" class="radio"><samp class="box-1">Finish</samp>
+  <samp class="border-lain"></samp>
+    <input class="form-check-input input-box-left_3" class="input-box-1" type="radio" name="flexRadioDefault" class="fiex-ml" id="flexRadioDefault1">
+  <label class="form-check-label input-box-left" for="flexRadioDefault1">
+   1
+  </label>
+ 
+  
+</div>
+<div class="col mt-3 ml-3 input-box-1">
+<input class="form-check-input mb-1 input-box-text" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+<label class="form-check-label input-box-text" for="flexRadioDefault1">
+  2
+</label>       
+  </div>
+<div class="col mt-3 ml-3 input-box-1">
+<input class="form-check-input mb-1 input-box-text" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+<label class="form-check-label input-box-text" for="flexRadioDefault1">
+  3
+</label>       
+  </div>   
+<div class="col mt-3 ml-3 input-box-1">
+<input class="form-check-input mb-1 input-box-text" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+<label class="form-check-label input-box-text" for="flexRadioDefault1">
+  4
+</label>       
+  </div>
+  <div class="col mt-3 ml-3 input-box-1">
+<input class="form-check-input mb-1 input-box-text" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+<label class="form-check-label input-box-text" for="flexRadioDefault1">
+  5
+</label>       
+  </div>
+<div class="col mt-3 ml-3 input-box-1">
+<input class="form-check-input mb-1 input-box-text" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+<label class="form-check-label input-box-text" for="flexRadioDefault1">
+ 6
+</label>       
+  </div>
+
+<div class="col mt-3 ml-3 input-box-1">
+<input class="form-check-input mb-1 input-box-text" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+<label class="form-check-label input-box-text" for="flexRadioDefault1">
+ 7
+</label>       
+  </div>
+<div class="col mt-3 ml-3 input-box-1">
+<input class="form-check-input mb-1 input-box-text" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+<label class="form-check-label input-box-text" for="flexRadioDefault1">
+ 8
+</label>       
+  </div>
+   <!-- Tie With -->
+      <hr>        
+<div class="form-check" class="radio"><samp class="box-2">Tie With</samp>
+  <samp class="border-lain-1"></samp>
+    <input class="form-check-input input-box-left-2" class="input-box-1" type="radio" name="flexRadioDefault" class="fiex-ml" id="flexRadioDefault1">
+  <label class="form-check-label input-box-left_1" for="flexRadioDefault1">
+   Did Not Tie
+  </label>
+ 
+  
+</div>
+<div class="col mt-3 ml-3 input-box_2">
+ <input class="form-check-input mb-1 input-box-text" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+ <label class="form-check-label input-box-text" for="flexRadioDefault1">
+  1
+</label>       
+  </div>
+  <div class="col mt-3 ml-3 input-box_2">
+ <input class="form-check-input mb-1 input-box-text" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+ <label class="form-check-label input-box-text" for="flexRadioDefault1">
+   2
+</label>       
+  </div>
+<div class="col mt-3 ml-3 input-box_2">
+ <input class="form-check-input mb-1 input-box-text" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+ <label class="form-check-label input-box-text" for="flexRadioDefault1">
+  3
+</label>       
+  </div>
+ <div class="col mt-3 ml-3 input-box_2">
+ <input class="form-check-input mb-1 input-box-text" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+ <label class="form-check-label input-box-text" for="flexRadioDefault1">
+  4
+</label>       
+  </div>
+  <div class="col mt-3 ml-3 input-box_2">
+ <input class="form-check-input mb-1 input-box-text" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+ <label class="form-check-label input-box-text" for="flexRadioDefault1">
+  5
+</label>       
+  </div>
+  <div class="col mt-3 ml-3 input-box_2">
+ <input class="form-check-input mb-1 input-box-text" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+ <label class="form-check-label input-box-text" for="flexRadioDefault1">
+  6
+</label>       
+  </div>
+  <div class="col mt-3 ml-3 input-box_2">
+ <input class="form-check-input mb-1 input-box-text" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+ <label class="form-check-label input-box-text" for="flexRadioDefault1">
+  7
+</label>       
+  </div>
+  <div class="col mt-3 ml-3 input-box_2">
+ <input class="form-check-input mb-1 input-box-text" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+ <label class="form-check-label input-box-text" for="flexRadioDefault1">
+  8
+</label>       
+  </div>
+  <hr>
+ <div class="form-check" class="radio"><samp class="box-2">Hero</samp>
+  
+   
+<select name="Heroes" id="Heroes" class="ms ml-4">
+	<option value="A. F. Kay">A. F. Kay</option>
+	<option value="Al'Akir the Windlord">Al'Akir the Windlord</option>
+	<option value="Alexstrasza">Alexstrasza</option>
+	<option value="Ambassador Faelin">Ambassador Faelin</option>
+	<option value="Aranna Starseeker">Aranna Starseeker</option>
+	<option value="Arch-Villain Rafaam">Arch-Villain Rafaam</option>
+	<option value="Bru’kan">Bru’kan</option>
+	<option value="C’Thun    ">C’Thun    </option>
+	<option value="Captain Eudora">Captain Eudora</option>
+	<option value="Captain Hooktusk">Captain Hooktusk</option>
+	<option value="Cariel Roame">Cariel Roame</option>
+	<option value="Chenvaala">Chenvaala</option>
+	<option value="Cookie the Cook">Cookie the Cook</option>
+	<option value="Dancin' Deryl">Dancin' Deryl</option>
+	<option value="Death Speaker Blackthorn">Death Speaker Blackthorn</option>
+	<option value="Deathwing">Deathwing</option>
+	<option value="Diablo">Diablo</option>
+	<option value="Dinotamer Brann">Dinotamer Brann</option>
+	<option value="Drek'Thar">Drek'Thar</option>
+	<option value="Edwin VanCleef">Edwin VanCleef</option>
+	<option value="Elise Starseeker">Elise Starseeker</option>
+	<option value="Enhance-o-Mechano">Enhance-o-Mechano</option>
+	<option value="Forest Warden Omu">Forest Warden Omu</option>
+	<option value="Fungalmancer Flurgl">Fungalmancer Flurgl</option>
+	<option value="Galakrond">Galakrond</option>
+	<option value="Galewing">Galewing</option>
+	<option value="George the Fallen">George the Fallen</option>
+	<option value="Greybough">Greybough</option>
+	<option value="Guff Runetotem">Guff Runetotem</option>
+	<option value="Heistbaron Togwaggle">Heistbaron Togwaggle</option>
+	<option value="Illidan Stormrage">Illidan Stormrage</option>
+	<option value="Infinite Toki">Infinite Toki</option>
+	<option value="Ini Stormcoil
+
+">Ini Stormcoil
+
+</option>
+	<option value="Jandice Barov">Jandice Barov</option>
+	<option value="Kael'thas Sunstrider">Kael'thas Sunstrider</option>
+	<option value="King Mukla">King Mukla</option>
+	<option value="Kurtrus Ashfallen">Kurtrus Ashfallen</option>
+	<option value="Lady Vashj">Lady Vashj</option>
+	<option value="Lich Baz'hial">Lich Baz'hial</option>
+	<option value="Lord Barov">Lord Barov</option>
+	<option value="Lord Jaraxxus">Lord Jaraxxus</option>
+	<option value="Maiev Shadowsong">Maiev Shadowsong</option>
+	<option value="Malygos">Malygos</option>
+	<option value="Master Nguyen">Master Nguyen</option>
+	<option value="Millhouse Manastorm">Millhouse Manastorm</option>
+	<option value="Millificent Manastorm">Millificent Manastorm</option>
+	<option value="Mr. Bigglesworth">Mr. Bigglesworth</option>
+	<option value="Murloc Holmes">Murloc Holmes</option>
+	<option value="Mutanus the Devourer">Mutanus the Devourer</option>
+	<option value="N'Zoth">N'Zoth</option>
+	<option value="Nozdormu">Nozdormu</option>
+	<option value="Onyxia">Onyxia</option>
+	<option value="Overlord Saurfang">Overlord Saurfang</option>
+	<option value="Ozumat">Ozumat</option>
+	<option value="Patches the Pirate">Patches the Pirate</option>
+	<option value="Patchwerk">Patchwerk</option>
+	<option value="Pyramad">Pyramad</option>
+	<option value="Queen Azshara">Queen Azshara</option>
+	<option value="Queen Wagtoggle">Queen Wagtoggle</option>
+	<option value="Ragnaros the Firelord">Ragnaros the Firelord</option>
+	<option value="Rakanishu">Rakanishu</option>
+	<option value="Reno Jackson">Reno Jackson</option>
+	<option value="Rokara">Rokara</option>
+	<option value="Scabbs Cutterbutter">Scabbs Cutterbutter</option>
+	<option value="Shudderwock">Shudderwock</option>
+	<option value="Silas Darkmoon">Silas Darkmoon</option>
+	<option value="Sindragosa">Sindragosa</option>
+	<option value="Sir Finley Mrrgglton">Sir Finley Mrrgglton</option>
+	<option value="Sire Denathrius">Sire Denathrius</option>
+	<option value="Skycap'n Kragg">Skycap'n Kragg</option>
+	<option value="Sneed">Sneed</option>
+	<option value="Sylvanas Windrunner">Sylvanas Windrunner</option>
+	<option value="Tamsin Roame">Tamsin Roame</option>
+	<option value="Tavish Stormpike">Tavish Stormpike</option>
+	<option value="Tess Greymane">Tess Greymane</option>
+	<option value="The Curator">The Curator</option>
+	<option value="The Great Akazamzarak">The Great Akazamzarak</option>
+	<option value="The Jailer">The Jailer</option>
+	<option value="The Lich King">The Lich King</option>
+	<option value="The Rat King">The Rat King</option>
+	<option value="Tickatus">Tickatus</option>
+	<option value="Trade Prince Gallywix">Trade Prince Gallywix</option>
+	<option value="Vanndar Stormpike">Vanndar Stormpike</option>
+	<option value="Varden Dawngrasp
+">Varden Dawngrasp
+</option>
+	<option value="Vol'jin">Vol'jin</option>
+	<option value="Xyrella">Xyrella</option>
+	<option value="Y'Shaarj">Y'Shaarj</option>
+	<option value="Yogg-Saron, Hope's End">Yogg-Saron, Hope's End</option>
+	<option value="Ysera">Ysera</option>
+	<option value="Zephyrs, the Great">Zephyrs, the Great</option>
+
+</select>
+ </div>
+  <hr>
+  <button type="button" class="btn btn-primary view"  id="btn-color"> Save</button>
+  <div class="w-100"><br></div>
+        </div>
+        </div></div></div>
+        </section></main>
+       
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+<div class="row w-50">
+<div class="checkButton">
+    <div class="w-100"><br></div>
+<div class="form-check"><samp class="box-1">Round</samp>
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+   1
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Default checked radio
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Default radio
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Default checked radio
+  </label>
+</div>
+</div></div></div></main>
+
+</center>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <center>
     <br><b> Choose your favroite season: </b><br>  
 <input type="radio" id="summer" value="Summer">Summer<br>   
 <input type="radio" id="winter" value="Winter">Winter<br>   
@@ -94,7 +740,7 @@ function checkButton() {
                     = "You have not selected any season";   
             }   
         }
-    </script>  
+    </script>   -->
 
 
 
@@ -102,18 +748,9 @@ function checkButton() {
 
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-
-
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+  <!--js links SECSION-->
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/js/main.js"></script>
+<!--js links and-->
   </body>
 </html>
