@@ -141,6 +141,7 @@ hr{
 width: 40px;
     padding: 5px 19px;
     padding-top: 20px;
+   
     
  }
 
@@ -194,6 +195,59 @@ left: 45px;
     background-color: #00ef73;
     
     border: 0px;}
+    
+
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  .border-lain{ 
+
+ position: relative;
+ left: 51px
+                 
+}
+}
+
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  #left-midea { 
+
+ position: relative;
+ left: 48px;
+                 
+}
+}
+
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  #left-midea_1 { 
+
+ position: relative;
+left: 50px;
+                 
+}
+}
+@media screen and (min-width: 375px) and (max-width: 667px) {
+
+  ml-4, .mx-4 {
+    margin-left: 1.5rem!important;
+    background-color: #fff;
+    color: #000;
+    }
+    select {
+    word-wrap: normal;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    right: 7px;
+}
+
+}
+select {
+    word-wrap: normal;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    right: 7px;}
+
+   
+
 </style>
 </head>
 
@@ -238,7 +292,7 @@ left: 45px;
                 
                 <div class="col ml-5">
                     <select name="Players">
-	<option>a</option>
+	<option id="bg-color-">a</option>
 </select>
                 </div>
                 <div class="w-100"><br></div>
@@ -288,7 +342,7 @@ left: 45px;
     <!-- Game -->
               
 <div class="form-check" class="radio"><samp class="box-1">Game. <b></b></samp>
-  <samp class="border-lain"></samp>
+  <samp class="border-lain" id="left-midea"></samp>
     <input class="form-check-input input-box-left-1" class="input-box-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
   <label class="form-check-label input-box-left" for="flexRadioDefault1">
    1
@@ -321,7 +375,7 @@ left: 45px;
     <!-- Finish -->
               
 <div class="form-check ml-2" class="radio"><samp class="box-1">Finish</samp>
-  <samp class="border-lain"></samp>
+  <samp class="border-lain" id="left-midea_1"></samp>
     <input class="form-check-input input-box-left_3" class="input-box-1" type="radio" name="flexRadioDefault" class="fiex-ml" id="flexRadioDefault1">
   <label class="form-check-label input-box-left" for="flexRadioDefault1">
    1
@@ -375,8 +429,9 @@ left: 45px;
    <!-- Tie With -->
       <hr>        
 <div class="form-check" class="radio"><samp class="box-2">Tie With</samp>
-  <samp class="border-lain-1"></samp>
-    <input class="form-check-input input-box-left-2" class="input-box-1" type="radio" name="flexRadioDefault" class="fiex-ml" id="flexRadioDefault1">
+  <samp class="border-lain-1" id="left-midea_2"></samp>
+     <input class="form-check-input input-box-left-2" class="input-box-1" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+
   <label class="form-check-label input-box-left_1" for="flexRadioDefault1">
    Did Not Tie
   </label>
